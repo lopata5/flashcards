@@ -29,6 +29,8 @@ footer p {
     text-align: center;
     background-color: beige;
     height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 300 ms ease-in-out;
     }
     .cartao__conteudo h3 {
        background-color: chocolate;
@@ -37,5 +39,9 @@ footer p {
        position: absolute;
        margin: 0.6rem;
        border-radius: 0.6rem;
-       font-size: 1vw; 
+       font-size: 1vw;
+       backface-visibility: hidden; 
+       position: absolute;
+       height: 100%;
+       width: 100%;
        }
